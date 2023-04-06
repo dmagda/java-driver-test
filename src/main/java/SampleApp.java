@@ -55,6 +55,9 @@ public class SampleApp {
                 case 3:
                     runQuery(settings, PreferQueryMode.EXTENDED_FOR_PREPARED);
                     break;
+                case 4:
+                    runQuery(settings, PreferQueryMode.EXTENDED_CACHE_EVERYTHING);
+                    break;
                 default:
                     System.err.println("Wrong command " + mode);
                     printWelcomeMessage();
@@ -68,6 +71,7 @@ public class SampleApp {
                     1 - simple
                     2 - extended
                     3 - extended for prepared
+                    4 - extended that caches everything
                     \n
                 """);
     }
